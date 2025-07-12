@@ -137,6 +137,15 @@ header h2 {
     flex-shrink: 0;
 }
 
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ecf0f1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 .image-placeholder {
     width: 150px;
     height: 150px;
@@ -327,5 +336,10 @@ footer {
         width: 120px;
         height: 120px;
         font-size: 50px;
+    }
+    
+    .profile-image img {
+        width: 120px;
+        height: 120px;
     }
 }
