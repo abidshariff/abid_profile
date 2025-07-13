@@ -6,296 +6,445 @@
     <title>Abid Shaik - Senior Data Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
-        <i class="fas fa-moon"></i>
-    </button>
-
-    <header>
+    <!-- Header Section -->
+    <header id="home">
         <div class="container">
-            <nav class="nav-menu">
-                <ul>
+            <nav>
+                <div class="logo">
+                    <a href="#home">Abid<span>.</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-            <div class="profile">
-                <div class="profile-image">
-                    <img src="profile-image.jpeg" alt="Abid Shaik">
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
                 </div>
-                <div class="profile-content">
-                    <h1>ABID SHAIK</h1>
+            </nav>
+
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span>Abid Shaik</span></h1>
                     <h2>Senior Data Engineer</h2>
-                    <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> <a href="mailto:abidshariff009@gmail.com">abidshariff009@gmail.com</a></p>
-                        <p><i class="fas fa-phone"></i> <a href="tel:+17169709249">(716) 970-9249</a></p>
-                        <p><i class="fas fa-map-marker-alt"></i> Dallas, Texas, 76210, United States</p>
-                        <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/abid-shaik-92693b52/" target="_blank">LinkedIn</a></p>
+                    <p>Specializing in data platforms, analytics, and cloud solutions</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#experience" class="btn secondary-btn">View My Work</a>
                     </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/abid-shaik-92693b52/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/abidshariff" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:abidshariff009@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile-image.jpeg" alt="Abid Shaik">
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <section id="about" class="about hidden">
-                <h2>Summary</h2>
-                <p>As a Senior Data Engineer at Amazon on the Workforce Intelligence team, I play a key role in delivering critical analytics that empower our Talent Acquisition team to enhance features within Amazon's internal hiring platforms. I build centralized data platforms that are used daily by thousands of users - recruiting coordinators, hiring managers, and senior executives - to improve the candidate experience and reduce hiring costs. Additionally, I've designed and implemented real-time analytics solutions that have optimized workload management for over a million hourly associates globally. My work also includes developing reusable solutions to streamline batch and real-time data transformation pipelines, providing self-service analytics for stakeholders.</p>
-            </section>
-
-            <section id="skills" class="skills hidden">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Cloud Platform</h3>
-                        <ul>
-                            <li>
-                                AWS
-                                <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
-                            </li>
-                        </ul>
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>As a Senior Data Engineer at Amazon on the Workforce Intelligence team, I play a key role in delivering critical analytics that empower our Talent Acquisition team to enhance features within Amazon's internal hiring platforms.</p>
+                    <p>I build centralized data platforms that are used daily by thousands of users - recruiting coordinators, hiring managers, and senior executives - to improve the candidate experience and reduce hiring costs.</p>
+                    <p>Additionally, I've designed and implemented real-time analytics solutions that have optimized workload management for over a million hourly associates globally. My work also includes developing reusable solutions to streamline batch and real-time data transformation pipelines, providing self-service analytics for stakeholders.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Abid Shaik</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p><a href="mailto:abidshariff009@gmail.com">abidshariff009@gmail.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <span>Phone:</span>
+                            <p><a href="tel:+17169709249">(716) 970-9249</a></p>
+                        </div>
+                        <div class="info-item">
+                            <span>Location:</span>
+                            <p>Dallas, Texas, United States</p>
+                        </div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Scripting Languages</h3>
-                        <ul>
-                            <li>
-                                Python
-                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
-                            </li>
-                            <li>
-                                SQL
-                                <div class="skill-bar"><div class="skill-progress" data-width="95"></div></div>
-                            </li>
-                            <li>
-                                Pyspark
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                            <li>
-                                Scala
-                                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
-                            </li>
-                            <li>
-                                Java
-                                <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
-                            </li>
-                            <li>
-                                Unix
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Big Data Tech</h3>
-                        <ul>
-                            <li>
-                                Hadoop
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                            <li>
-                                Spark
-                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Visualization Tools</h3>
-                        <ul>
-                            <li>
-                                Amazon QuickSight
-                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
-                            </li>
-                            <li>
-                                Tableau
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                            <li>
-                                Cognos
-                                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Database Management</h3>
-                        <ul>
-                            <li>
-                                PostgreSQL
-                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
-                            </li>
-                            <li>
-                                MySQL
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                            <li>
-                                MongoDB
-                                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
-                            </li>
-                            <li>
-                                Oracle
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Orchestration Tools</h3>
-                        <ul>
-                            <li>
-                                Apache Airflow
-                                <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>ETL Tools</h3>
-                        <ul>
-                            <li>
-                                Informatica Powercenter
-                                <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
-                            </li>
-                            <li>
-                                Informatica Cloud
-                                <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
                 </div>
-            </section>
-
-            <section id="experience" class="experience hidden">
-                <h2>Work Experience</h2>
-                <div class="job">
-                    <h3>Sr. Data Engineer</h3>
-                    <div class="job-info">
-                        <p class="company">Amazon</p>
-                        <p class="duration">December 2020 - Present</p>
-                    </div>
-                    <p class="location">Dallas, United States</p>
-                    <ul>
-                        <li>Developed an automated agentic AI utility using Q CLI that streamlined data ingestion processes to a central data platform, resulting in a 90% reduction in development effort and significantly accelerating project delivery timelines.</li>
-                        <li>Designed and implemented real-time analytic solutions that transformed the workload management for over a million hourly associates worldwide.</li>
-                        <li>Developed the data model for a centralized metrics library containing over 200 core recruiting metrics, which eliminated data integrity issues and improved accuracy for executive reporting.</li>
-                        <li>Played a pivotal role in migrating a critical data reporting system to a modern micro-services architecture, addressing challenges, resolving blockers, and ensuring smooth transitions to new platforms.</li>
-                        <li>Led a cross-functional team to create an innovative case management tool that significantly improved user experience, earning leadership recognition for creativity and efficiency.</li>
-                        <li>Spearheaded process improvements, including developing run-books and checklists, which resulted in a 30% reduction in operational tickets and improved overall service reliability.</li>
-                        <li>Designed and implemented a custom maintenance utility for a large-scale data platform, reducing system costs by 50% and improving platform stability.</li>
-                        <li>Developed an automation framework that reduced time-to-market for new data pipelines by 70%, increasing team efficiency and responsiveness to business needs.</li>
-                        <li>Designed and implemented security protocols that improved the ability to respond to incidents quickly, ensuring data protection and compliance with organizational standards.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Data Engineer</h3>
-                    <div class="job-info">
-                        <p class="company">CGI</p>
-                        <p class="duration">June 2015 - December 2020</p>
-                    </div>
-                    <p class="location">Boston, United States</p>
-                    <ul>
-                        <li>Designed and implemented AWS systems in line with compliance and security standards, reducing security risks by 40% and improving system reliability for business-critical applications.</li>
-                        <li>Built and deployed scalable, fault-tolerant environments that enhanced application uptime by 30%, enabling more consistent and accessible data workflows for teams.</li>
-                        <li>Led cloud migration of on-prem applications to AWS, achieving a 25% reduction in infrastructure costs and supporting increased operational flexibility and scalability.</li>
-                        <li>Developed centralized data repositories and automated data workflows, reducing manual data handling by 50% and enabling teams to access insights faster, improving decision-making across business units.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>ETL Analyst</h3>
-                    <div class="job-info">
-                        <p class="company">Tech Mahindra</p>
-                        <p class="duration">February 2013 - July 2014</p>
-                    </div>
-                    <p class="location">Hyderabad, India</p>
-                    <ul>
-                        <li>Built a decision support model for Insurance policies, which reduced the cost of Insurance claims by 35%.</li>
-                        <li>Published customized interactive reports and dashboards using Tableau Server.</li>
-                        <li>Developed a scoring model using Informatica Data Quality to automate the de-duplication process of over 50 million passenger vehicle licenses.</li>
-                        <li>Designed and developed a data repository in Oracle via Informatica PowerCenter ETL processing to re-design 70+ analytic dashboards for an investment bank with $1B+ in assets.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <h3>Systems Engineer</h3>
-                    <div class="job-info">
-                        <p class="company">Infosys</p>
-                        <p class="duration">October 2010 - October 2012</p>
-                    </div>
-                    <p class="location">Hyderabad, India</p>
-                    <ul>
-                        <li>Managed current and historical financial transactions of a multinational bank using Informatica and Oracle DB.</li>
-                        <li>Designed and developed various OBIEE Interactive Dashboards and reports with drill-downs, guided navigation, filters, and prompts.</li>
-                        <li>Developed Unix shell scripts to schedule and execute the Informatica jobs in UNIX and optimized the existing Informatica mappings by checking for bottlenecks, reducing the execution time by 70%.</li>
-                        <li>Automated one of the production support processes by developing a tool that reduced the manual effort by 65%.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="education" class="education hidden">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Masters in Information Systems</h3>
-                    <div class="education-info">
-                        <p class="institution">University at Buffalo</p>
-                        <p class="duration">GPA: 3.89</p>
-                    </div>
-                    <p class="location">Buffalo, United States</p>
-                </div>
-                <div class="education-item">
-                    <h3>Bachelors in Computer Science</h3>
-                    <div class="education-info">
-                        <p class="institution">Vellore Institute of Technology</p>
-                        <p class="duration">GPA: 3.7</p>
-                    </div>
-                    <p class="location">Vellore, India</p>
-                </div>
-            </section>
-
-            <section id="certifications" class="certifications hidden">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>AWS Data Engineer (Associate) - Amazon Web Services</li>
-                    <li>AWS Solutions Architect (Associate) - Amazon Web Services</li>
-                    <li>AWS Cloud Practitioner - Amazon Web Services</li>
-                </ul>
-            </section>
-
-            <section id="contact" class="contact hidden">
-                <h2>Get In Touch</h2>
-                <p>Interested in working together? Feel free to reach out using the form below or through my contact information above.</p>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </section>
+            </div>
         </div>
-    </main>
+    </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Sr. Data Engineer</h3>
+                        <h4>Amazon</h4>
+                        <p class="timeline-date">December 2020 - Present</p>
+                        <p class="timeline-location">Dallas, United States</p>
+                        <ul>
+                            <li>Developed an automated agentic AI utility using Q CLI that streamlined data ingestion processes to a central data platform, resulting in a 90% reduction in development effort and significantly accelerating project delivery timelines.</li>
+                            <li>Designed and implemented real-time analytic solutions that transformed the workload management for over a million hourly associates worldwide.</li>
+                            <li>Developed the data model for a centralized metrics library containing over 200 core recruiting metrics, which eliminated data integrity issues and improved accuracy for executive reporting.</li>
+                            <li>Played a pivotal role in migrating a critical data reporting system to a modern micro-services architecture, addressing challenges, resolving blockers, and ensuring smooth transitions to new platforms.</li>
+                            <li>Led a cross-functional team to create an innovative case management tool that significantly improved user experience, earning leadership recognition for creativity and efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Engineer</h3>
+                        <h4>CGI</h4>
+                        <p class="timeline-date">June 2015 - December 2020</p>
+                        <p class="timeline-location">Boston, United States</p>
+                        <ul>
+                            <li>Designed and implemented AWS systems in line with compliance and security standards, reducing security risks by 40% and improving system reliability for business-critical applications.</li>
+                            <li>Built and deployed scalable, fault-tolerant environments that enhanced application uptime by 30%, enabling more consistent and accessible data workflows for teams.</li>
+                            <li>Led cloud migration of on-prem applications to AWS, achieving a 25% reduction in infrastructure costs and supporting increased operational flexibility and scalability.</li>
+                            <li>Developed centralized data repositories and automated data workflows, reducing manual data handling by 50% and enabling teams to access insights faster, improving decision-making across business units.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>ETL Analyst</h3>
+                        <h4>Tech Mahindra</h4>
+                        <p class="timeline-date">February 2013 - July 2014</p>
+                        <p class="timeline-location">Hyderabad, India</p>
+                        <ul>
+                            <li>Built a decision support model for Insurance policies, which reduced the cost of Insurance claims by 35%.</li>
+                            <li>Published customized interactive reports and dashboards using Tableau Server.</li>
+                            <li>Developed a scoring model using Informatica Data Quality to automate the de-duplication process of over 50 million passenger vehicle licenses.</li>
+                            <li>Designed and developed a data repository in Oracle via Informatica PowerCenter ETL processing to re-design 70+ analytic dashboards for an investment bank with $1B+ in assets.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Systems Engineer</h3>
+                        <h4>Infosys</h4>
+                        <p class="timeline-date">October 2010 - October 2012</p>
+                        <p class="timeline-location">Hyderabad, India</p>
+                        <ul>
+                            <li>Managed current and historical financial transactions of a multinational bank using Informatica and Oracle DB.</li>
+                            <li>Designed and developed various OBIEE Interactive Dashboards and reports with drill-downs, guided navigation, filters, and prompts.</li>
+                            <li>Developed Unix shell scripts to schedule and execute the Informatica jobs in UNIX and optimized the existing Informatica mappings by checking for bottlenecks, reducing the execution time by 70%.</li>
+                            <li>Automated one of the production support processes by developing a tool that reduced the manual effort by 65%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Cloud Platform</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">AWS</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="95%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Scripting Languages</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Python</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">SQL</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Pyspark</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Scala</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Java</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Unix</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Big Data Tech</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Hadoop</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Spark</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Visualization Tools</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">Amazon QuickSight</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Tableau</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Cognos</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Database Management</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">PostgreSQL</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">MySQL</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">MongoDB</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">Oracle</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="education-container">
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Masters in Information Systems</h3>
+                        <h4>University at Buffalo</h4>
+                        <p class="education-date">GPA: 3.89</p>
+                        <p class="education-location">Buffalo, United States</p>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>Bachelors in Computer Science</h3>
+                        <h4>Vellore Institute of Technology</h4>
+                        <p class="education-date">GPA: 3.7</p>
+                        <p class="education-location">Vellore, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certifications</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="certifications-container">
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AWS Data Engineer (Associate)</h3>
+                        <p>Amazon Web Services</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AWS Solutions Architect (Associate)</h3>
+                        <p>Amazon Web Services</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>AWS Cloud Practitioner</h3>
+                        <p>Amazon Web Services</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Dallas, Texas, 76210, United States</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:abidshariff009@gmail.com">abidshariff009@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+17169709249">(716) 970-9249</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/abid-shaik-92693b52/" target="_blank">linkedin.com/in/abid-shaik-92693b52</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/abid-shaik-92693b52/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/abidshariff" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:abidshariff009@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <div class="footer-content">
+                <p>&copy; <span class="current-year">2025</span> Abid Shaik. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abid-shaik-92693b52/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/abidshariff" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:abidshariff009@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <p>&copy; <span class="current-year">2025</span> Abid Shaik - Senior Data Engineer</p>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 </body>
 </html>

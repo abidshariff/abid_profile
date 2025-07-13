@@ -1,33 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize theme
-    const themeToggle = document.getElementById('themeToggle');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const navLinks = document.querySelector('.nav-links');
     
-    // Check for saved theme preference or use the system preference
-    const currentTheme = localStorage.getItem('theme') || 
-                        (prefersDarkScheme.matches ? 'dark' : 'light');
-    
-    // Apply the theme
-    if (currentTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    if (menuBtn) {
+        menuBtn.addEventListener('click', function() {
+            this.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
     }
     
-    // Theme toggle functionality
-    themeToggle.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        
-        // Update the button icon
-        if (document.body.classList.contains('dark-mode')) {
-            this.innerHTML = '<i class="fas fa-sun"></i>';
-            localStorage.setItem('theme', 'dark');
-        } else {
-            this.innerHTML = '<i class="fas fa-moon"></i>';
-            localStorage.setItem('theme', 'light');
-        }
+    // Close mobile menu when clicking a link
+    const navItems = document.querySelectorAll('.nav-links a');
+    navItems.forEach(item => {
+        item.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            menuBtn.classList.remove('active');
+        });
     });
     
-    // Add smooth scrolling for anchor links
+    // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -37,57 +29,57 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 100,
+                    top: targetElement.offsetTop - 70,
                     behavior: 'smooth'
                 });
             }
         });
     });
     
-    // Add animation to sections when they come into view
-    const sections = document.querySelectorAll('section');
-    
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-    
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                
-                // Animate skill bars if this is the skills section
-                if (entry.target.id === 'skills') {
-                    animateSkillBars();
-                }
-                
-                observer.unobserve(entry.target);
+    // Active navigation link based on scroll position
+    function updateActiveLink() {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        let current = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            
+            if (pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute('id');
             }
         });
-    }, observerOptions);
-    
-    sections.forEach(section => {
-        observer.observe(section);
-    });
-    
-    // Animate skill bars
-    function animateSkillBars() {
-        const skillBars = document.querySelectorAll('.skill-progress');
-        skillBars.forEach(bar => {
-            const width = bar.getAttribute('data-width');
-            setTimeout(() => {
-                bar.style.width = width + '%';
-            }, 200);
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
         });
     }
     
-    // Add current year to footer
-    const yearElement = document.querySelector('.current-year');
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
+    window.addEventListener('scroll', updateActiveLink);
+    
+    // Initialize skill bars animation
+    const skillPers = document.querySelectorAll('.skill-per');
+    
+    skillPers.forEach(skillPer => {
+        const per = skillPer.getAttribute('per');
+        skillPer.style.width = per;
+    });
+    
+    // Scroll to top button
+    const scrollTopBtn = document.querySelector('.scroll-top-btn');
+    
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('active');
+        } else {
+            scrollTopBtn.classList.remove('active');
+        }
+    });
     
     // Handle contact form submission
     const contactForm = document.getElementById('contactForm');
@@ -110,58 +102,30 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Add active class to navigation links based on scroll position
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    const sections2 = document.querySelectorAll('section');
-    
-    window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections2.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (pageYOffset >= sectionTop - 200) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === current) {
-                link.classList.add('active');
-            }
-        });
-    });
-    
-    // Add typing animation to the header
-    const headerTitle = document.querySelector('header h1');
-    if (headerTitle) {
-        const text = headerTitle.textContent;
-        headerTitle.textContent = '';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                headerTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        };
-        
-        // Start the typing animation after a short delay
-        setTimeout(typeWriter, 500);
+    // Add current year to footer
+    const yearElement = document.querySelector('.current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
     }
     
-    // Add hover effect to job items
-    const jobItems = document.querySelectorAll('.job');
-    jobItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateX(10px)';
+    // Add animation to elements when they come into view
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+                observer.unobserve(entry.target);
+            }
         });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateX(0)';
-        });
+    }, observerOptions);
+    
+    // Observe elements to animate
+    document.querySelectorAll('.timeline-item, .education-item, .certification-item, .contact-item').forEach(item => {
+        observer.observe(item);
     });
 });
