@@ -962,6 +962,24 @@ footer .social-icons a:hover {
     color: var(--white-color);
     transform: translateY(-2px);
 }
+.download-btn {
+    background-color: #333;
+    color: var(--white-color);
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.download-btn:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+.download-btn i {
+    font-size: 0.9rem;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero {
@@ -1086,11 +1104,16 @@ footer .social-icons a:hover {
     .hero-btns {
         flex-direction: column;
         gap: 10px;
+        width: 100%;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .btn {
         width: 100%;
         text-align: center;
+        justify-content: center;
     }
     
     .education-item {

@@ -1,0 +1,195 @@
+%PDF-1.4
+1 0 obj
+<</Type /Catalog /Pages 2 0 R>>
+endobj
+2 0 obj
+<</Type /Pages /Kids [3 0 R] /Count 1>>
+endobj
+3 0 obj
+<</Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 6 0 R>>
+endobj
+4 0 obj
+<</Font <</F1 5 0 R>>>>
+endobj
+5 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica>>
+endobj
+6 0 obj
+<</Length 3000>>
+stream
+BT
+/F1 16 Tf
+50 742 Td
+(ABID SHAIK) Tj
+ET
+BT
+/F1 12 Tf
+50 722 Td
+(Senior Data Engineer) Tj
+ET
+BT
+/F1 10 Tf
+50 702 Td
+(Email: abidshariff009@gmail.com | Phone: (716) 970-9249 | Dallas, Texas, 76210, United States) Tj
+ET
+BT
+/F1 12 Tf
+50 672 Td
+(SUMMARY) Tj
+ET
+BT
+/F1 10 Tf
+50 652 Td
+(As a Senior Data Engineer at Amazon on the Workforce Intelligence team, I play a key role in delivering) Tj
+50 637 Td
+(critical analytics that empower our Talent Acquisition team to enhance features within Amazon's internal) Tj
+50 622 Td
+(hiring platforms. I build centralized data platforms that are used daily by thousands of users - recruiting) Tj
+50 607 Td
+(coordinators, hiring managers, and senior executives - to improve the candidate experience and reduce) Tj
+50 592 Td
+(hiring costs. Additionally, I've designed and implemented real-time analytics solutions that have optimized) Tj
+50 577 Td
+(workload management for over a million hourly associates globally. My work also includes developing) Tj
+50 562 Td
+(reusable agentic AI solutions to streamline batch and real-time data transformation pipelines, providing) Tj
+50 547 Td
+(self-service analytics for stakeholders.) Tj
+ET
+BT
+/F1 12 Tf
+50 517 Td
+(EXPERIENCE) Tj
+ET
+BT
+/F1 11 Tf
+50 497 Td
+(Sr. Data Engineer - Amazon) Tj
+ET
+BT
+/F1 10 Tf
+50 482 Td
+(December 2020 - Present | Dallas, United States) Tj
+ET
+BT
+/F1 10 Tf
+60 462 Td
+(\267 Developed an automated agentic AI utility using Q CLI that streamlined data ingestion processes) Tj
+60 447 Td
+(  to a central data platform, resulting in a 90% reduction in development effort.) Tj
+60 432 Td
+(\267 Designed and implemented real-time analytic solutions that transformed the workload management) Tj
+60 417 Td
+(  for over a million hourly associates worldwide.) Tj
+60 402 Td
+(\267 Developed the data model for a centralized metrics library containing over 200 core recruiting metrics.) Tj
+60 387 Td
+(\267 Played a pivotal role in migrating a critical data reporting system to a modern micro-services architecture.) Tj
+ET
+BT
+/F1 11 Tf
+50 357 Td
+(Data Engineer - CGI) Tj
+ET
+BT
+/F1 10 Tf
+50 342 Td
+(June 2015 - December 2020 | Boston, United States) Tj
+ET
+BT
+/F1 10 Tf
+60 322 Td
+(\267 Designed and implemented AWS systems in line with compliance and security standards, reducing) Tj
+60 307 Td
+(  security risks by 40% and improving system reliability for business-critical applications.) Tj
+60 292 Td
+(\267 Built and deployed scalable, fault-tolerant environments that enhanced application uptime by 30%.) Tj
+60 277 Td
+(\267 Led cloud migration of on-prem applications to AWS, achieving a 25% reduction in infrastructure costs.) Tj
+ET
+BT
+/F1 12 Tf
+50 247 Td
+(SKILLS) Tj
+ET
+BT
+/F1 11 Tf
+50 227 Td
+(GenAI:) Tj
+/F1 10 Tf
+100 227 Td
+(Amazon Bedrock, Q Developer, Agentic AI (Q CLI, Gemini CLI), Amazon Kendra, Amazon Titan,) Tj
+100 212 Td
+(Amazon Polly, Amazon Lex, Amazon Comprehend) Tj
+ET
+BT
+/F1 11 Tf
+50 192 Td
+(AWS:) Tj
+/F1 10 Tf
+100 192 Td
+(Lambda, EC2, Glue, S3, Redshift, DynamoDB, Athena, EMR, Step Functions, MWAA, CloudWatch) Tj
+ET
+BT
+/F1 11 Tf
+50 172 Td
+(Languages:) Tj
+/F1 10 Tf
+100 172 Td
+(Python, SQL, Pyspark, Scala, Java, Unix) Tj
+ET
+BT
+/F1 11 Tf
+50 152 Td
+(Big Data:) Tj
+/F1 10 Tf
+100 152 Td
+(Hadoop, Spark) Tj
+ET
+BT
+/F1 12 Tf
+50 122 Td
+(EDUCATION) Tj
+ET
+BT
+/F1 11 Tf
+50 102 Td
+(Masters in Information Systems) Tj
+/F1 10 Tf
+50 87 Td
+(University at Buffalo | GPA: 3.89) Tj
+ET
+BT
+/F1 11 Tf
+50 67 Td
+(Bachelors in Computer Science) Tj
+/F1 10 Tf
+50 52 Td
+(Vellore Institute of Technology | GPA: 3.7) Tj
+ET
+BT
+/F1 12 Tf
+50 22 Td
+(CERTIFICATIONS) Tj
+ET
+BT
+/F1 10 Tf
+50 7 Td
+(AWS Data Engineer (Associate), AWS Solutions Architect (Associate), AWS Cloud Practitioner) Tj
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f
+0000000009 00000 n
+0000000056 00000 n
+0000000111 00000 n
+0000000212 00000 n
+0000000251 00000 n
+0000000318 00000 n
+trailer
+<</Size 7/Root 1 0 R>>
+startxref
+3369
+%%EOF
