@@ -19,6 +19,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Collapsible Skills
+    const collapsibleSkills = document.querySelectorAll('.collapsible-skill');
+    
+    collapsibleSkills.forEach(skill => {
+        const header = skill.querySelector('.skill-header');
+        const details = skill.querySelector('.skill-details');
+        const icon = skill.querySelector('.collapse-icon');
+        
+        // Set initial state - collapsed
+        details.classList.remove('active');
+        icon.classList.remove('active');
+        
+        header.addEventListener('click', function() {
+            details.classList.toggle('active');
+            icon.classList.toggle('active');
+        });
+    });
+    
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {

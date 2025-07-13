@@ -892,6 +892,69 @@ footer .social-icons a:hover {
     --animation-order: 7;
 }
 
+/* Collapsible Skills */
+.collapsible-skill {
+    cursor: pointer;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-header .skill-name {
+    flex: 1;
+}
+
+.skill-header .skill-bar {
+    flex: 2;
+    margin: 0 15px;
+}
+
+.collapse-icon {
+    transition: var(--transition);
+    color: var(--primary-color);
+}
+
+.collapse-icon.active i {
+    transform: rotate(180deg);
+}
+
+.skill-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    margin-top: 0;
+}
+
+.skill-details.active {
+    max-height: 500px;
+    margin-top: 15px;
+}
+
+.aws-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.aws-services li {
+    background-color: rgba(255, 127, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.aws-services li:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transform: translateY(-2px);
+}
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero {
