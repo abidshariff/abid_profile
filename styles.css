@@ -364,13 +364,14 @@ nav {
 
 .info-item {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .info-item span {
     font-weight: 600;
     color: var(--dark-color);
     margin-right: 10px;
+    min-width: 70px;
 }
 
 /* Experience Section */
@@ -988,6 +989,14 @@ footer .social-icons a:hover {
     
     .personal-info {
         grid-template-columns: 1fr;
+    }
+    
+    .info-item {
+        margin-bottom: 10px;
+    }
+    
+    .info-item span {
+        min-width: 80px;
     }
 }
 
