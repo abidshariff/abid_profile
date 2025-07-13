@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe elements to animate
-    document.querySelectorAll('.timeline-item, .education-item, .certification-item, .contact-item').forEach(item => {
+    document.querySelectorAll('.timeline-item, .education-item, .certification-item, .contact-item, .skill-category').forEach(item => {
         observer.observe(item);
     });
 });
