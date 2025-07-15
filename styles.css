@@ -239,11 +239,11 @@ nav {
 
 .hero-text h1 span {
     color: var(--primary-color);
-    position: relative;
-    display: inline-block;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background: none !important;
+    box-shadow: none !important;
 }
-
-/* Removed the underline effect */
 
 .hero-text h2 {
     font-size: 1.8rem;
@@ -344,6 +344,7 @@ nav {
     align-items: center;
     position: relative;
     z-index: 1;
+    height: 400px; /* Fixed height for better alignment */
 }
 
 .hero-image::before {
@@ -383,10 +384,12 @@ nav {
 
 .hero-image img {
     max-width: 80%;
+    max-height: 80%;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     position: relative;
     z-index: 2;
+    object-fit: cover;
 }
 
 /* About Section */
