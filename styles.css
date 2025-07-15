@@ -328,15 +328,18 @@ nav {
 
 .company-logo {
     margin-top: 5px;
-    max-width: 120px;
+    width: 120px;
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .company-logo img {
     max-width: 100%;
     max-height: 100%;
+    object-fit: contain;
+}
     object-fit: contain;
 }
     object-fit: contain;
@@ -1172,4 +1175,13 @@ footer .social-icons a:hover {
         margin-right: 0;
         margin-bottom: 15px;
     }
+}
+/* Specific company logo adjustments */
+.timeline-content .company-logo img[alt="CGI Logo"] {
+    min-height: 40px;
+    margin-left: 0;
+}
+
+.timeline-content .company-logo img[alt="Tech Mahindra Logo"] {
+    min-height: 40px;
 }
