@@ -346,6 +346,9 @@ nav {
     z-index: 1;
     height: 400px; /* Fixed height for better alignment */
     margin: 0 auto;
+    /* Ensure it's centered in the light orange area */
+    display: flex;
+    justify-content: center;
 }
 
 .hero-image::before {
@@ -386,16 +389,19 @@ nav {
 }
 
 .hero-image img {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
     position: absolute;
     z-index: 2;
-    object-fit: cover;
+    object-fit: contain; /* Changed to contain to show the whole picture */
+    object-position: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: white; /* Added to ensure no transparency */
+    padding: 5px; /* Added padding for a cleaner look */
 }
 
 /* About Section */
@@ -1052,11 +1058,12 @@ footer .social-icons a:hover {
     .hero-image {
         height: 350px;
         margin: 0 auto;
+        width: 100%;
     }
     
     .hero-image img {
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
     }
     
     .about-content {
@@ -1172,8 +1179,8 @@ footer .social-icons a:hover {
     }
     
     .hero-image img {
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
 }
         margin-left: auto;
