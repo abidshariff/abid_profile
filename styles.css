@@ -339,8 +339,17 @@ nav {
 .hero-image {
     flex: 0 0 50%;
     position: relative;
-    z-index: 1;
     height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.image-container {
+    position: relative;
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -356,8 +365,8 @@ nav {
     opacity: 0.3;
     animation: rotate 30s linear infinite;
     top: 50%;
-    right: 75px; /* Changed from left: 50% to right: 75px */
-    transform: translate(0, -50%); /* Changed transform to account for right positioning */
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 0;
 }
 
@@ -369,17 +378,17 @@ nav {
     background-color: rgba(255, 127, 0, 0.05);
     border-radius: 50%;
     top: 50%;
-    right: 75px; /* Changed from left: 50% to right: 75px */
-    transform: translate(0, -50%); /* Changed transform to account for right positioning */
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 @keyframes rotate {
     0% {
-        transform: translate(0, -50%) rotate(0deg); /* Updated transform */
+        transform: translate(-50%, -50%) rotate(0deg);
     }
     100% {
-        transform: translate(0, -50%) rotate(360deg); /* Updated transform */
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
 
@@ -387,14 +396,11 @@ nav {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     z-index: 2;
     object-fit: contain;
     object-position: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    top: 50%;
-    right: 75px; /* Changed from left: 50% to right: 75px */
-    transform: translate(0, -50%); /* Changed transform to account for right positioning */
 }
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
@@ -1067,30 +1073,17 @@ footer .social-icons a:hover {
     .hero-image {
         flex: 0 0 100%;
         height: 350px;
-        padding-right: 0; /* Remove padding on mobile */
-        justify-content: center; /* Center on mobile */
+        padding-right: 0;
+        justify-content: center;
     }
     
-    .hero-image::before,
-    .hero-image::after,
-    .hero-image img {
-        right: auto; /* Reset right positioning */
-        left: 50%; /* Center on mobile */
-        transform: translate(-50%, -50%); /* Center on mobile */
+    .image-container {
+        margin: 0 auto;
     }
     
     .hero-image img {
         width: 250px;
         height: 250px;
-    }
-    
-    @keyframes rotate {
-        0% {
-            transform: translate(-50%, -50%) rotate(0deg); /* Updated for mobile */
-        }
-        100% {
-            transform: translate(-50%, -50%) rotate(360deg); /* Updated for mobile */
-        }
     }
     
     .about-content {
@@ -1193,6 +1186,11 @@ footer .social-icons a:hover {
     
     .hero-image {
         height: 300px;
+    }
+    
+    .image-container {
+        width: 280px;
+        height: 280px;
     }
     
     .hero-image::before {
