@@ -234,6 +234,7 @@ nav {
     color: var(--dark-color);
     margin-bottom: 10px;
     line-height: 1.2;
+    white-space: nowrap; /* Prevent line breaks */
 }
 
 .hero-text h1 span {
@@ -1057,6 +1058,11 @@ footer .social-icons a:hover {
         margin-top: 30px;
     }
     
+    .hero-text h1 {
+        font-size: 3rem; /* Slightly reduced font size */
+        white-space: nowrap; /* Maintain nowrap */
+    }
+    
     .hero-text p {
         margin-left: auto;
         margin-right: auto;
@@ -1180,6 +1186,7 @@ footer .social-icons a:hover {
     
     .hero-text h1 {
         font-size: 2.5rem;
+        white-space: nowrap; /* Maintain nowrap */
     }
     
     .hero-text h2 {
