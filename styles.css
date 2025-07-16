@@ -223,7 +223,7 @@ nav {
 }
 
 .hero-text {
-    flex: 1;
+    flex: 0 0 50%;
     padding-right: 30px;
     position: relative;
     z-index: 1;
@@ -338,17 +338,13 @@ nav {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 0 0 50%;
+    position: relative;
+    z-index: 1;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 1;
-    height: 400px; /* Fixed height for better alignment */
-    margin: 0 auto;
-    /* Ensure it's centered in the light orange area */
-    display: flex;
-    justify-content: center;
 }
 
 .hero-image::before {
@@ -1034,10 +1030,14 @@ footer .social-icons a:hover {
     
     .hero::before {
         width: 100%;
+        height: 50%;
+        top: 0;
+        right: 0;
         border-radius: 0;
     }
     
     .hero-text {
+        flex: 0 0 100%;
         padding-right: 0;
         margin-top: 30px;
     }
@@ -1056,9 +1056,8 @@ footer .social-icons a:hover {
     }
     
     .hero-image {
+        flex: 0 0 100%;
         height: 350px;
-        margin: 0 auto;
-        width: 100%;
     }
     
     .hero-image img {
